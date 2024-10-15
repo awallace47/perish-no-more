@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     public Animator animator;
+    public SpriteRenderer renderer;
 
     private Vector2 movement;
 
@@ -15,7 +16,20 @@ public class Movement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        animator.SetBool("Moving", movement.x != 0.0f || movement.y != 0.0f);
+        bool moving = movement.x != 0.0f || movement.y != 0.0f;
+
+        animator.SetBool("Moving", moving);
+
+        
+        if (movement.x < 0)
+        {
+            renderer.flipX = true;
+        }
+        else
+        {
+            renderer.flipX = false;
+        }
+
     }
 
     void FixedUpdate()

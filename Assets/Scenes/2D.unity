@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -404,7 +403,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.047255
+  orthographic size: 4.5413127
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -429,8 +428,8 @@ Transform:
   m_GameObject: {fileID: 860491774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.74, y: -1.82, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.1, z: -10}
+  m_LocalScale: {x: 1, y: 1.41, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1402,6 +1401,7 @@ MonoBehaviour:
   moveSpeed: 2
   rb: {fileID: 1532076016942028144}
   animator: {fileID: 1532076016942028146}
+  renderer: {fileID: 1532076016942028150}
 --- !u!95 &1532076016942028146 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7482241307725589104, guid: 163064779dc0c374ebe094b430c4a808, type: 3}
@@ -1452,6 +1452,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.617612, y: 2.8261013}
   m_EdgeRadius: 0
+--- !u!212 &1532076016942028150 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3244196645146233228, guid: 163064779dc0c374ebe094b430c4a808, type: 3}
+  m_PrefabInstance: {fileID: 1532076016942028142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3482144177698575641
 PrefabInstance:
   m_ObjectHideFlags: 0
