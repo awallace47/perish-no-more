@@ -25,7 +25,7 @@ public class Movement : MonoBehaviour
         {
             renderer.flipX = true;
         }
-        else
+        else if (movement.x > 0)
         {
             renderer.flipX = false;
         }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1234099594785255281}
   - component: {fileID: 5731586175027434834}
   - component: {fileID: -5345670770515455237}
+  - component: {fileID: 7081514361907996116}
   m_Layer: 0
   m_Name: egg_carton
   m_TagString: Untagged
@@ -130,3 +131,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.33, y: 2.26}
   m_EdgeRadius: 0
+--- !u!50 &7081514361907996116
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4714792591370446977}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
