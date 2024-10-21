@@ -2,14 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public Rigidbody2D rb;
-    public Animator animator;
-    public SpriteRenderer renderer;
+
+    private Rigidbody2D rb;
+    private Animator animator;
+    private SpriteRenderer renderer;
 
     private Vector2 movement;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        renderer = rb.GetComponent<SpriteRenderer>();
+    }
 
     // Update is called once per frame
     void Update()
