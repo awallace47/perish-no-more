@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
 public class Movement : MonoBehaviour
@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator animator;
-    private SpriteRenderer renderer;
+    private SpriteRenderer spriteRenderer;
 
     private Vector2 movement;
 
@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        renderer = rb.GetComponent<SpriteRenderer>();
+        spriteRenderer = rb.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -35,11 +35,11 @@ public class Movement : MonoBehaviour
         
         if (movement.x < 0)
         {
-            renderer.flipX = true;
+            spriteRenderer.flipX = true;
         }
         else if (movement.x > 0)
         {
-            renderer.flipX = false;
+            spriteRenderer.flipX = false;
         }
 
     }
