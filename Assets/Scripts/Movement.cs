@@ -5,14 +5,12 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(SpriteRenderer))]
 public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
     private Rigidbody2D rb;
     private Animator animator;
-    private SpriteRenderer spriteRenderer;
 
     private Vector2 movement;
 
@@ -20,7 +18,6 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        spriteRenderer = rb.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -35,11 +32,11 @@ public class Movement : MonoBehaviour
         
         if (movement.x < 0)
         {
-            spriteRenderer.flipX = true;
+            transform.eulerAngles = new Vector3(0, 180, 0);
         }
         else if (movement.x > 0)
         {
-            spriteRenderer.flipX = false;
+            transform.eulerAngles = Vector3.zero;
         }
 
     }
