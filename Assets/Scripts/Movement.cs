@@ -2,14 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
 public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public Rigidbody2D rb;
-    public Animator animator;
-    public SpriteRenderer renderer;
+
+    private Rigidbody2D rb;
+    private Animator animator;
 
     private Vector2 movement;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -23,11 +32,11 @@ public class Movement : MonoBehaviour
         
         if (movement.x < 0)
         {
-            renderer.flipX = true;
+            transform.eulerAngles = new Vector3(0, 180, 0);
         }
         else if (movement.x > 0)
         {
-            renderer.flipX = false;
+            transform.eulerAngles = Vector3.zero;
         }
 
     }
