@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 5020155155151018382}
   - component: {fileID: 7409345247298655879}
   - component: {fileID: 6649720656338448501}
+  - component: {fileID: 7792178180931162814}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Untagged
@@ -67,6 +68,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5815848097029815228}
+  - {fileID: 5979803282134178276}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6861622660541841847
@@ -245,6 +247,54 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &7792178180931162814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3247328680404577143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a76641909730e4aa18783910ba4e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactCenter: {fileID: 5979803282134178276}
+  interactRange: 0.35
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!1 &8601887224615595599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5979803282134178276}
+  m_Layer: 0
+  m_Name: InteractCenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5979803282134178276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8601887224615595599}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.75, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8699901630925232846}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8867056330654554783
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +441,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0034341838, y: -0.4727803}
