@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/main-ui.uss?fileID=7433441132597879392&amp;guid=e044d1d02bd29174dacfaa59eca7deff&amp;type=3#main-ui" />
+    <ui:VisualElement name="UIContainer" class="ui-container" style="flex-grow: 1;">
+        <ui:VisualElement class="score-time-container" style="flex-grow: 1;">
+            <ui:VisualElement name="ScoreContainer" class="score-container" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Score:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="score-label" />
+                <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ScoreLabel" />
+            </ui:VisualElement>
+            <ui:VisualElement name="TimeContainer" class="time-container" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Time:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="time-label" style="margin-right: 2px;" />
+                <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TimeLabel" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" class="health-stamina-container" style="flex-grow: 1;">
+            <ui:ProgressBar value="100" title="health" name="HealthBar" class="status-bar health-bar" />
+            <ui:ProgressBar value="100" title="Stamina" name="StaminaBar" class="status-bar stamina-bar" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

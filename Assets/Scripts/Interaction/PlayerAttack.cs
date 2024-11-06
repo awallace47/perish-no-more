@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -7,8 +8,14 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
+    private StatusManager statusManager;
 
     public bool IsAttacking { get; private set; }
+
+    private void Start()
+    {
+        statusManager = GetComponent<StatusManager>();
+    }
 
     void Update()
     {
@@ -43,9 +50,19 @@ public class PlayerAttack : MonoBehaviour
         {
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
+            HashSet<GameObject> hits = new();
+
             foreach (Collider2D enemy in hitEnemies)
             {
-                Destroy(enemy.gameObject);
+                if (enemy.gameObject != null)
+                    hits.Add(enemy.gameObject);
+                yield return null;
+            }
+
+            foreach (GameObject go in hits)
+            {
+                Destroy(go);
+                statusManager.AddScore(10.0f);
                 yield return null;
             }
 
