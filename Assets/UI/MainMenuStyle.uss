@@ -2,7 +2,7 @@
 }
 
 .button {
-    background-image: url("project://database/Assets/UI/UI_atlas.psd?fileID=-1065953847518432337&guid=240205a8b72498b45bc87aa5d2a61453&type=3#bt_11");
+    background-image: url("project://database/Assets/UI/UI_atlas.psd?fileID=-5260526383003628231&guid=240205a8b72498b45bc87aa5d2a61453&type=3#bt_11");
     width: 300px;
     font-size: 81px;
     -unity-font: url("project://database/Assets/Thaleah_PixelFont/Materials/ThaleahFat_TTF.ttf?fileID=12800000&guid=585188cdc4600544eb408bee749e4b3a&type=3#ThaleahFat_TTF");
@@ -28,5 +28,5 @@
 }
 
 .button:hover {
-    background-image: url("project://database/Assets/UI/UI_atlas.psd?fileID=-1298237115068830360&guid=240205a8b72498b45bc87aa5d2a61453&type=3#bt_08");
+    background-image: url("project://database/Assets/UI/UI_atlas.psd?fileID=1720057304681770067&guid=240205a8b72498b45bc87aa5d2a61453&type=3#bt_08");
 }
