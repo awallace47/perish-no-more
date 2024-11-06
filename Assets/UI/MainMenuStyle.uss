@@ -1,0 +1,32 @@
+.header {
+}
+
+.button {
+    background-image: url("project://database/Assets/UI/UI_atlas.psd?fileID=-5260526383003628231&guid=240205a8b72498b45bc87aa5d2a61453&type=3#bt_11");
+    width: 300px;
+    font-size: 81px;
+    -unity-font: url("project://database/Assets/Thaleah_PixelFont/Materials/ThaleahFat_TTF.ttf?fileID=12800000&guid=585188cdc4600544eb408bee749e4b3a&type=3#ThaleahFat_TTF");
+    height: 104px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    -unity-font-definition: initial;
+}
+
+.main-menu-container {
+    flex-direction: row;
+    background-image: url("project://database/Assets/Sprites/Main_Menu/main_menu_background.png?fileID=21300000&guid=f9e8caf29a2dcac45915bf18ba9fda89&type=3#main_menu_background");
+    justify-content: center;
+}
+
+.main-menu-btn-grp {
+    flex-direction: row;
+    margin-top: 17%;
+}
+
+.button:hover {
+    background-image: url("project://database/Assets/UI/UI_atlas.psd?fileID=1720057304681770067&guid=240205a8b72498b45bc87aa5d2a61453&type=3#bt_08");
+}

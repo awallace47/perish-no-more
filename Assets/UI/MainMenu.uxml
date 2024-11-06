@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=e9a10809bc09e144e919cd61b75f8486&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="Container" class="main-menu-container" style="flex-grow: 1;">
+        <ui:VisualElement name="ButtonGroup" class="main-menu-btn-grp" style="flex-grow: 1; justify-content: center; scale: 1.1 1.1;">
+            <ui:Button text="Start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StartBtn" class="button" />
+            <ui:Button text="Quit" parse-escape-sequences="false" display-tooltip-when-elided="true" name="QuitBtn" class="button" style="margin-left: 35px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,82 @@
+.ui-container {
+    flex-direction: row;
+    -unity-font: url("project://database/Assets/Thaleah_PixelFont/Materials/ThaleahFat_TTF.ttf?fileID=12800000&guid=585188cdc4600544eb408bee749e4b3a&type=3#ThaleahFat_TTF");
+    -unity-font-definition: initial;
+    justify-content: space-between;
+}
+
+.score-time-container {
+    flex-direction: row;
+    height: 59px;
+    font-size: 40px;
+    margin-left: 21px;
+    padding-top: 18px;
+}
+
+.health-stamina-container {
+    height: 129px;
+    align-items: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 18px;
+    margin-right: 32px;
+    margin-bottom: 18px;
+    margin-left: 18px;
+}
+
+.status-bar {
+    width: 449px;
+}
+
+.time-label {
+    margin-right: 61px;
+}
+
+.score-label {
+}
+
+.unity-progress-bar__container {
+    max-height: 80px;
+    height: 45px;
+    font-size: 30px;
+}
+
+.unity-progress-bar__background {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.unity-progress-bar__progress {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.health-bar {
+}
+
+.stamina-bar {
+}
+
+.health-bar .unity-progress-bar__progress {
+    background-color: rgba(220, 0, 0, 0.83);
+}
+
+.stamina-bar .unity-progress-bar__progress {
+    background-color: rgba(91, 228, 12, 0.85);
+}
+
+.time-container {
+    flex-direction: row;
+    width: 231px;
+    max-width: 231px;
+}
+
+.score-container {
+    flex-direction: row;
+    max-width: 489px;
+    min-width: 489px;
+}
