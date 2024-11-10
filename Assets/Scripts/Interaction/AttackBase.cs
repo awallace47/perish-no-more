@@ -3,10 +3,15 @@ using UnityEngine;
 
 public class AttackBase : MonoBehaviour
 {
-    public Animator animator;
     public LayerMask enemyLayers;
+    protected Animator animator;
     protected List<GameObject> currentHitObjs = new();
     public bool IsAttacking { get; private set; }
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     protected virtual void OnTriggerEnter2D(Collider2D collider)
     {
@@ -40,7 +45,7 @@ public class AttackBase : MonoBehaviour
 
     public void Attack()
     {
-        animator.SetTrigger("Attack");
+        animator?.SetTrigger("Attack");
         IsAttacking = true;
     }
 }
