@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2908610134472738375
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7449742679918196830}
-  m_Layer: 0
-  m_Name: AttackPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7449742679918196830
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2908610134472738375}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.001, y: -0.508, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9056587283445850330}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3247328680404577143
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,8 +14,8 @@ GameObject:
   - component: {fileID: 8382007651367725832}
   - component: {fileID: 5020155155151018382}
   - component: {fileID: 7409345247298655879}
-  - component: {fileID: 6649720656338448501}
   - component: {fileID: 7792178180931162814}
+  - component: {fileID: 3960014911512189919}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Untagged
@@ -229,24 +198,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.81, y: 2.44}
   m_EdgeRadius: 0
---- !u!114 &6649720656338448501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3247328680404577143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44c0ea62a52d0eb468045c5df26772d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 786861162266636343}
-  attackPoint: {fileID: 7449742679918196830}
-  attackRange: 0.22
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!114 &7792178180931162814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +215,22 @@ MonoBehaviour:
   buttonLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &3960014911512189919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3247328680404577143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c0ea62a52d0eb468045c5df26772d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 786861162266636343}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &8601887224615595599
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,10 +365,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1261387282451589892, guid: 020cf799182c54243ad79c06c1e1fdb0, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1876800685452102888, guid: 020cf799182c54243ad79c06c1e1fdb0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7449742679918196830}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1996699844699532761, guid: 020cf799182c54243ad79c06c1e1fdb0, type: 3}
       insertIndex: -1
