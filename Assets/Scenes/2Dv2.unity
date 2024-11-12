@@ -4661,7 +4661,7 @@ Transform:
   m_GameObject: {fileID: 1258603338}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.01, z: 0}
+  m_LocalPosition: {x: 0.05, y: 0.01, z: 0}
   m_LocalScale: {x: 123.07448, y: 123.07448, z: 123.07448}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5199,7 +5199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACQn+uKz2DEggIAAD4FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoWxDRjcW+sQ0kMSJrSTiy/CWmMNQvJIcoBk+O9dyTZ26Qnx3n68fVr5i3BpKsit0mvN2bNiQL6PiDuTb6OefIIz3Su55Z/QxbxzZksXRH3MG7VcIR66NKOOYDXPf8i9cMEBgrXkhdLHFdtDqow1CBdUGEBKK+uyJUJfI3LGn3HiUi54ihbu9ImnJBhd8ZiDtKAHoeEkCRbT2TKersZB3KYhGiZRsIyDBaLLtkQ0mYfTKInj+WocTn25WuaCHitgbra+6qzrP2u6Spy6jXAT5koIblrJxF4qb0lKK1PjwBjAOEULvM5wMkWgBL4vrdMwTH8tCgO2dUjTywPX6GVTl/xUjcFHag6Nsg8qatcpmsdeVVP0+T9+HHq60Or41PUNA9fDljw/vNFLTo0d3MAQfhhI9wadqDjQnYD3EuSLWmtVS4ak1bVLrQ1ED/3f22hpCfmhxxupd2Bd9Y53hnfX7Wa4+unPqeDHnaMmswbYCuUd91sCGu/mFwr2O2TaEog6FX8M/Kb74bK1xCPXxiLVTimdvJ2qtQslK++Zm6a2qdISPNyKrkBSYS8bLGPvr/COG7S9Yx6pe1Zt85brXstdiof7+CC4ozbqdLssU6rTM5jytbaCS+hFO+IFfUqVlM2GDT3p0ra1Lmg+SNvXnP27WqQo8AXtWESLPEh2dDlms2CRzOJkVwQhi+dz4nePS5yTik0jtLUHb032xSXuWfe1Ga01rfy2M01Pa/55VEOBXBZqm2sA+dqUuCkHjV3wYbIV4+jQFqzl0l84+cqIUPkBWHbrmflRV2eradZXyUjFP5R1SEZS/33JiINvy7zR8MHh5Jp3xa7k+hdQSwMEFAAACAgAAJCf6/hgB1ZtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tFJamrGRZVKKUWJasoFlUqKFboqJgbmliZllUpqBYYqZqalSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAJCf64rPYMSCAgAAPgUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJCf6/hgB1ZtAAAAeAAAAAkAJAAAAAAAAAAAAAAAzwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAACHAwAAAAA=
+    dataString: UEsDBBQAAAgIAACQn+spb+VRggIAAD8FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VMFy4jAM/RXG56WTBAhkb7sppXtoy5Tu9JKLiRXiwdgZ2ynQDv++spOQLDt7QjxJT9KTnC/Cpakgt0qvNGdPigH5PiLOJt9GvfMRTnSn5IZ/QhfzzpktXRD1Ma/UcoV46NKMOoDVPP8hd8IFBwjWkhdKH5ZsB6ky1iBcUGEAXVpZly0R+hqRE/6ME5dyRiuaO+sTrSQYXdDMQVrQg9DwLgnmk+kinizHQdymIRomUbCIgzmii5YiupuFkyiJ49lyHE48XS1zQQ8VMDdbzzrt6k+bqhKnbiPchLkSgpu2ZWLPlZckpZWpcWAMYJyiBL7P4C5xKSXwXWldE8P8l6IwYFuJND3fc41iNsTkp2oUPlCzb1r7oKJ2paJZ7NtqSJ/+8Y9D7y60Ojx2dcPA1bAlz/ev9JxTYwcrGML3fe+hV+hIxZ5uBbyXIJ/VSqtaMnRaXbvU2kB03/+9jpaWkO97vGn1BqyrXvJO8W7fboaLn/6UCn7YeimnDbARykvuzwQ0LucXNuyPyLQUiLoufht4o7vhtbWOB66NRVc7pXTtbVWtXShZes3cNLVNlZaghwwVSCrseY089naHN77/Zz1Q97Da6q2vey83KR7u44PgxrVWx+u2TKmOT2DKl9oKLqGX2jmeUahUSdmc2HCkLm1T64Lmg7Rdzdnft0WKAt/QlkW0yINkSxdjNg3myTROtkUQsng2I/74uMQ5qVg3jbby4NpkTy7x0LrvzWilaeXPnWl6XPHPgzJ9JJeF2uQaQL40DNfGQWMRfJlsyTgKtAFrufQLJ18ZESrfA8uuRJmfdHmymmY9S0Yq/qGsQzKS+g9MRhx8Pea1hg8OR1e8I7uQyx9QSwMEFAAACAgAAJCf6/hgB1ZtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tFJamrGRZVKKUWJasoFlUqKFboqJgbmliZllUpqBYYqZqalSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAJCf6ylv5VGCAgAAPwUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJCf6/hgB1ZtAAAAeAAAAAkAJAAAAAAAAAAAAAAAzwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAACHAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -5212,8 +5212,8 @@ MonoBehaviour:
   manualDebugFloorRoof: 0
   showSearchTree: 0
   unwalkableNodeDebugSize: 0.3
-  logPathResults: 1
-  maxNearestNodeDistance: 100
+  logPathResults: 0
+  maxNearestNodeDistance: 1
   scanOnStartup: 1
   fullGetNearestSearch: 0
   prioritizeGraphs: 0
@@ -5227,11 +5227,43 @@ MonoBehaviour:
     _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
     _AreaColors:
     - {r: 0, g: 0, b: 0, a: 0}
-  tagNames: []
+  tagNames:
+  - Basic Ground
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
   heuristic: 2
   heuristicScale: 1
   threadCount: 1
-  maxFrameTime: 1
+  maxFrameTime: 10
   batchGraphUpdates: 0
   graphUpdateBatchingInterval: 0.2
   euclideanEmbedding:
