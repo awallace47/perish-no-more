@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5213852138830324845}
   - component: {fileID: 7462280207093627067}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: yogurt1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

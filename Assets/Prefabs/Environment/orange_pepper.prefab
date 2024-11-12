@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2310432415289026507}
   - component: {fileID: 3278461443117959118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: orange_pepper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
