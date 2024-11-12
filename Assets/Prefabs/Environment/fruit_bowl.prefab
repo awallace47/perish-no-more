@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8842366563574118880}
   - component: {fileID: 3623236206486146423}
   - component: {fileID: 3768500561877364664}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fruit_bowl
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2901699467514064753}
   - component: {fileID: 7387124496882162570}
   - component: {fileID: -3619280990612336654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pickle_jar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

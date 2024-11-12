@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3862065147111412220}
   - component: {fileID: 9168025321868510617}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: soda_can2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
