@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonInteraction : MonoBehaviour
 {
@@ -8,7 +9,13 @@ public class ButtonInteraction : MonoBehaviour
     public void Interact()
     {
         animator = GetComponent<Animator>();
+
         animator?.SetTrigger("Interact");
-        gate?.SetActive(false);
+
+        if (gate != null) {
+            gate?.SetActive(false);
+        } else {
+            SceneManager.LoadScene("BossArena");
+        }
     }
 }
