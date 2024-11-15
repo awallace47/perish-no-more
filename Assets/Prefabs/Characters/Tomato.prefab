@@ -16,7 +16,9 @@ GameObject:
   - component: {fileID: 7409345247298655879}
   - component: {fileID: 7792178180931162814}
   - component: {fileID: 3960014911512189919}
-  m_Layer: 0
+  - component: {fileID: 6283609350645757878}
+  - component: {fileID: 1239972705348903957}
+  m_Layer: 7
   m_Name: Tomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,6 +155,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  dodgeSpeed: 10
+  dodgeStaminaUsage: 20
+  dodgeDistance: 1.5
 --- !u!61 &7409345247298655879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -231,6 +236,36 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   animator: {fileID: 786861162266636343}
+--- !u!114 &6283609350645757878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3247328680404577143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943cb62986c43fe4eb50a42e3d9cc13f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  health: 100
+  stamina: 100
+  timeInSeconds: 300
+--- !u!114 &1239972705348903957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3247328680404577143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11aff18fdd76b7643aff3776364eb344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8601887224615595599
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +275,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5979803282134178276}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InteractCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5815848097029815228}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ItemSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1996699844699532761, guid: 020cf799182c54243ad79c06c1e1fdb0, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1261387282451589892, guid: 020cf799182c54243ad79c06c1e1fdb0, type: 3}

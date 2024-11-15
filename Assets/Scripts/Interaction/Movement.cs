@@ -8,12 +8,17 @@ public class Movement : MonoBehaviour
     public float moveSpeed = 5f;
     public float dodgeSpeed = 100f;
     public float dodgeStaminaUsage = 20.0f;
+    public float dodgeDistance = 1f;
 
     private float originalSpeed;
     private Rigidbody2D rb;
     private Animator animator;
+    private bool isDodging;
+    
+    private Vector2 dodgeStartPos;
 
     private Vector2 movement;
+    private Vector2 lastMovement;
     private StatusManager statusManager;
 
     private void Start()
@@ -34,9 +39,9 @@ public class Movement : MonoBehaviour
         {
             if (statusManager.stamina >= dodgeStaminaUsage)
             {
-                moveSpeed = dodgeSpeed;
                 statusManager.SubtractStamina(dodgeStaminaUsage);
-
+                dodgeStartPos = rb.position;
+                isDodging = true;
             }
         } 
 
@@ -58,7 +63,16 @@ public class Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        moveSpeed = originalSpeed;
+        if (isDodging)
+        {
+            rb.MovePosition(rb.position + lastMovement * dodgeSpeed * Time.fixedDeltaTime);
+            if (Vector2.Distance(dodgeStartPos, rb.position) >= dodgeDistance)
+                isDodging = false;
+        }
+        else if (movement != Vector2.zero) 
+        {
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+            lastMovement = movement;
+        }
     }
 }

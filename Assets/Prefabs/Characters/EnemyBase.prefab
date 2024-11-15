@@ -354,3 +354,4 @@ MonoBehaviour:
   nextWaypointDistance: 3
   attackRange: 0.75
   aggroRange: 5
+  animator: {fileID: 0}
