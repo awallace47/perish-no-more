@@ -7903,6 +7903,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5020155155151018382, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
+      propertyPath: dodgeSpeed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8601887224615595599, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
       propertyPath: m_Layer
       value: 7

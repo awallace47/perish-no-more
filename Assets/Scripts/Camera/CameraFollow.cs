@@ -26,7 +26,7 @@ public class CameraFollow : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         if (followObject == null) return;
 
