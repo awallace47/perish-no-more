@@ -9,8 +9,8 @@ public class StatusManager : MonoBehaviour
     public LayerMask enemyLayers;
     private UIManager uiManager;
     private PlayerAttack playerAttack;
-    private float health = 100.0f;
-    private float stamina = 100.0f;
+    public float health = 100.0f;
+    public float stamina = 100.0f;
     private float score = 0f;
     public int timeInSeconds = 300;
     void Start()

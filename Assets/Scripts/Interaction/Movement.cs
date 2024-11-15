@@ -6,16 +6,21 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float dodgeSpeed = 100f;
 
+    private float originalSpeed;
     private Rigidbody2D rb;
     private Animator animator;
 
     private Vector2 movement;
+    private StatusManager statusManager;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        statusManager = GetComponent<StatusManager>();
+        originalSpeed = moveSpeed;
     }
 
     // Update is called once per frame
@@ -23,6 +28,17 @@ public class Movement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            if (statusManager.stamina > 0f)
+            {
+                moveSpeed = dodgeSpeed;
+                statusManager.SubtractStamina(10.0f);
+
+            }
+        } 
+
         bool moving = movement.x != 0.0f || movement.y != 0.0f;
 
         animator.SetBool("Moving", moving);
@@ -42,5 +58,6 @@ public class Movement : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        moveSpeed = originalSpeed;
     }
 }
