@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float dodgeSpeed = 100f;
+    public float dodgeStaminaUsage = 20.0f;
 
     private float originalSpeed;
     private Rigidbody2D rb;
@@ -31,10 +32,10 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            if (statusManager.stamina > 0f)
+            if (statusManager.stamina >= dodgeStaminaUsage)
             {
                 moveSpeed = dodgeSpeed;
-                statusManager.SubtractStamina(10.0f);
+                statusManager.SubtractStamina(dodgeStaminaUsage);
 
             }
         } 
