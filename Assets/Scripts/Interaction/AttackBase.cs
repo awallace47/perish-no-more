@@ -3,10 +3,12 @@ using UnityEngine;
 
 public class AttackBase : MonoBehaviour
 {
+    public int damage = 10;
     public LayerMask enemyLayers;
     public Animator animator;
     protected List<GameObject> currentHitObjs = new();
     public bool IsAttacking { get; private set; }
+    protected bool isHitting = false;
 
     private void Start()
     {
@@ -15,7 +17,7 @@ public class AttackBase : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D collider)
     {
-        if (IsHit(collider))
+        if (IsHit(collider) && !isHitting)
         {
             HandleAttackHit(collider.gameObject);
         }
@@ -23,7 +25,7 @@ public class AttackBase : MonoBehaviour
 
     protected virtual void OnTriggerStay2D(Collider2D collider)
     {
-        if (IsHit(collider) && !currentHitObjs.Contains(collider.gameObject))
+        if (IsHit(collider) && !currentHitObjs.Contains(collider.gameObject) && !isHitting)
         {
             currentHitObjs.Add(collider.gameObject);
             HandleAttackHit(collider.gameObject);
@@ -35,11 +37,14 @@ public class AttackBase : MonoBehaviour
         return IsAttacking && (enemyLayers & (1 << collider.gameObject.layer)) != 0;
     }
 
-    protected virtual void HandleAttackHit(GameObject gameObject) { }
+    protected virtual void HandleAttackHit(GameObject gameObject) {
+        isHitting = true;
+    }
 
     void AttackAnimCompleted(AnimationEvent evt)
     {
         IsAttacking = false;
+        isHitting = false;
         currentHitObjs.Clear();
     }
 

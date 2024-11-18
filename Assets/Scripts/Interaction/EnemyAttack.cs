@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class EnemyAttack : AttackBase
 {
-    // Start is called before the first frame update
-    void Start()
+    
+    protected override void HandleAttackHit(GameObject gameObject)
     {
-        
-    }
+        base.HandleAttackHit(gameObject);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        PlayerStatusManager playerStatusManager = gameObject.GetComponent<PlayerStatusManager>();
+
+        if (playerStatusManager != null)
+        {
+            playerStatusManager.SubtractHealth(damage);
+        }
     }
 }

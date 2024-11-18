@@ -5,6 +5,7 @@ public class ButtonInteraction : MonoBehaviour
 {
     private Animator animator;
     public GameObject gate;
+    public bool isGateTrigger;
     
     public void Interact()
     {
@@ -14,7 +15,7 @@ public class ButtonInteraction : MonoBehaviour
 
         if (gate != null) {
             gate?.SetActive(false);
-        } else {
+        } else if (isGateTrigger){
             SceneManager.LoadScene("BossArena");
         }
     }

@@ -7,8 +7,9 @@ public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float dodgeSpeed = 100f;
-    public float dodgeStaminaUsage = 20.0f;
+    public int dodgeStaminaUsage = 20;
     public float dodgeDistance = 1f;
+    public LayerMask obstacleLayerMask;
 
     private float originalSpeed;
     private Rigidbody2D rb;
@@ -19,14 +20,22 @@ public class Movement : MonoBehaviour
 
     private Vector2 movement;
     private Vector2 lastMovement;
-    private StatusManager statusManager;
+    private PlayerStatusManager statusManager;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        statusManager = GetComponent<StatusManager>();
+        statusManager = GetComponent<PlayerStatusManager>();
         originalSpeed = moveSpeed;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if ((obstacleLayerMask & (1 << collision.gameObject.layer)) != 0)
+        {
+            isDodging = false;
+        }
     }
 
     // Update is called once per frame

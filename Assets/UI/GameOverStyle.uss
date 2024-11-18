@@ -1,0 +1,11 @@
+.main-container {
+    align-items: center;
+}
+
+.game-over-label {
+    -unity-font: url("project://database/Assets/Thaleah_PixelFont/Materials/ThaleahFat_TTF.ttf?fileID=12800000&guid=585188cdc4600544eb408bee749e4b3a&type=3#ThaleahFat_TTF");
+    -unity-font-definition: initial;
+    font-size: 200px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 103px;
+}
