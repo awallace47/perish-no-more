@@ -7872,6 +7872,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8382007651367725832, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382007651367725832, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
+      propertyPath: m_LinearDrag
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382007651367725832, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
+      propertyPath: m_AngularDrag
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 8699901630925232846, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.65

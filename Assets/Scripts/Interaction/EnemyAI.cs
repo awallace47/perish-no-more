@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.Find("Player").transform;
         enemyAttack = GetComponent<EnemyAttack>();
-        InvokeRepeating("UpdatePath", 0f, 0.5f);
+        InvokeRepeating("UpdatePath", 0f, 0.1f);
         
     }
 
@@ -71,7 +71,7 @@ public class EnemyAI : MonoBehaviour
         }
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-        Vector2 force = direction * speed * Time.deltaTime;
+        Vector2 force = direction * speed * Time.fixedDeltaTime;
 
         animator.SetBool("Moving", true);
         rb.AddForce(force);

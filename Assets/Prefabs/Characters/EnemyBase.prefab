@@ -368,5 +368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21646ebdd5346094588c88e50eeb6741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 20
+  health: 100
   spriteRenderer: {fileID: 2864627477018737350}
+  deathAnimScale: 0.85
