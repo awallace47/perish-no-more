@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float dodgeSpeed = 100f;
-    public float dodgeStaminaUsage = 20.0f;
+    public int dodgeStaminaUsage = 20;
     public float dodgeDistance = 1f;
 
     private float originalSpeed;
@@ -19,13 +19,13 @@ public class Movement : MonoBehaviour
 
     private Vector2 movement;
     private Vector2 lastMovement;
-    private StatusManager statusManager;
+    private PlayerStatusManager statusManager;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        statusManager = GetComponent<StatusManager>();
+        statusManager = GetComponent<PlayerStatusManager>();
         originalSpeed = moveSpeed;
     }
 

@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class PlayerAttack : AttackBase
 {
-    private StatusManager playerStatusManager;
+    private PlayerStatusManager playerStatusManager;
 
     private void Start()
     {
-        playerStatusManager = GetComponent<StatusManager>();
+        playerStatusManager = GetComponent<PlayerStatusManager>();
     }
 
     void Update()

@@ -4350,6 +4350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3046799af4bad4d822e80b9f463f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 9197481963319205126, guid: 59dcb70ffa55c0f4fa1a475affa8bbcf, type: 3}
 --- !u!114 &1170597425
 MonoBehaviour:
   m_ObjectHideFlags: 0

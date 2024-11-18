@@ -3,6 +3,7 @@ using UnityEngine.UIElements;
 
 public class UIManager : MonoBehaviour
 {
+    public VisualTreeAsset gameOverScreen;
     private UIDocument uiDocument;
     private ProgressBar healthBar;
     private ProgressBar staminaBar;
@@ -37,5 +38,10 @@ public class UIManager : MonoBehaviour
     public void UpdateTimeLabel(int time)
     {
         timeLabel.text = time.ToString();
+    }
+
+    public void GameOver()
+    {
+        uiDocument.visualTreeAsset = gameOverScreen;
     }
 }

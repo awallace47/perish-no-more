@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 7409345247298655879}
   - component: {fileID: 7792178180931162814}
   - component: {fileID: 3960014911512189919}
-  - component: {fileID: 6283609350645757878}
   - component: {fileID: 1239972705348903957}
+  - component: {fileID: 4473728958154909061}
   m_Layer: 7
   m_Name: Tomato
   m_TagString: Untagged
@@ -236,24 +236,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   animator: {fileID: 786861162266636343}
---- !u!114 &6283609350645757878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3247328680404577143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 943cb62986c43fe4eb50a42e3d9cc13f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 8
-  health: 100
-  stamina: 100
-  timeInSeconds: 300
 --- !u!114 &1239972705348903957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +248,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11aff18fdd76b7643aff3776364eb344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4473728958154909061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3247328680404577143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2472016e08ff0c74a8c0d3f43f2e82b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  spriteRenderer: {fileID: 6861622660541841847}
+  deathAnimScale: 0.95
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  stamina: 100
+  timeInSeconds: 300
+  godMode: 0
 --- !u!1 &8601887224615595599
 GameObject:
   m_ObjectHideFlags: 0

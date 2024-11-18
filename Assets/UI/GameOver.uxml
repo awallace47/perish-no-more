@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GameOverStyle.uss?fileID=7433441132597879392&amp;guid=8291983176923474fb6e528dca25ba7d&amp;type=3#GameOverStyle" />
+    <ui:VisualElement name="GameOverContainer" class="main-container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/Game_Over/game_over_background.png?fileID=2800000&amp;guid=6aea058303007bf49986ed4510ab1a39&amp;type=3#game_over_background&quot;); flex-direction: column-reverse;">
+        <ui:Label tabindex="-1" text="Game Over" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GameOverLabel" class="game-over-label" />
+    </ui:VisualElement>
+</ui:UXML>

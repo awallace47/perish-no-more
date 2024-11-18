@@ -162,6 +162,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 247812067716230255}
+    - target: {fileID: 2025266947793553720, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+      propertyPath: health
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2864627477018737350, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: m_Size.x
       value: 9.3
