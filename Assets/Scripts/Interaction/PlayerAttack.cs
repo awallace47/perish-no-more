@@ -25,7 +25,7 @@ public class PlayerAttack : AttackBase
 
         if (enemyStatusManager != null)
         {
-            enemyStatusManager.Hit(10);
+            enemyStatusManager.Hit(damage);
             playerStatusManager.AddScore(10.0f);
         }
 

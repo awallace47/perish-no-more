@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyAttack : AttackBase
 {
+    
     protected override void HandleAttackHit(GameObject gameObject)
     {
         base.HandleAttackHit(gameObject);
@@ -12,7 +13,7 @@ public class EnemyAttack : AttackBase
 
         if (playerStatusManager != null)
         {
-            playerStatusManager.SubtractHealth(5);
+            playerStatusManager.SubtractHealth(damage);
         }
     }
 }

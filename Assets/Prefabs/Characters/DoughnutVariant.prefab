@@ -14,23 +14,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6818416336151110641, guid: 903c86cfc02ace84d8add84509ee1158, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6527367
+      value: 2.6695004
       objectReference: {fileID: 0}
     - target: {fileID: 6818416336151110641, guid: 903c86cfc02ace84d8add84509ee1158, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6527367
+      value: 2.6695004
       objectReference: {fileID: 0}
     - target: {fileID: 6818416336151110641, guid: 903c86cfc02ace84d8add84509ee1158, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.6527368
+      value: 2.6695006
       objectReference: {fileID: 0}
     - target: {fileID: 6818416336151110641, guid: 903c86cfc02ace84d8add84509ee1158, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.34000003
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 6818416336151110641, guid: 903c86cfc02ace84d8add84509ee1158, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.48
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 6818416336151110641, guid: 903c86cfc02ace84d8add84509ee1158, type: 3}
       propertyPath: m_LocalPosition.z
@@ -139,24 +139,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1229291286892794366, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229291286892794366, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 247812067716230255}
     - target: {fileID: 1987063918692882419, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: m_Size.x
-      value: 3.5146022
+      value: 2.849616
       objectReference: {fileID: 0}
     - target: {fileID: 1987063918692882419, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: m_Size.y
-      value: 3.1495886
+      value: 3.087245
       objectReference: {fileID: 0}
     - target: {fileID: 1987063918692882419, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: m_Offset.x
-      value: 0.0202775
+      value: -0.042065382
       objectReference: {fileID: 0}
     - target: {fileID: 1987063918692882419, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: m_Offset.y
-      value: -0.0000007748604
+      value: 0.031171143
       objectReference: {fileID: 0}
     - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: animator
@@ -164,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 247812067716230255}
     - target: {fileID: 2025266947793553720, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: health
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2864627477018737350, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: m_Size.x

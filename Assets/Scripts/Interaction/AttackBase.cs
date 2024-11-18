@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class AttackBase : MonoBehaviour
 {
+    public int damage = 10;
     public LayerMask enemyLayers;
     public Animator animator;
     protected List<GameObject> currentHitObjs = new();

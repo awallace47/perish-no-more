@@ -2808,7 +2808,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7871,6 +7871,10 @@ PrefabInstance:
     - target: {fileID: 3247328680404577143, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473728958154909061, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
+      propertyPath: godMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8382007651367725832, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
       propertyPath: m_Mass
