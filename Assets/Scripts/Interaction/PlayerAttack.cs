@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class PlayerAttack : AttackBase
 {
-    private StatusManager statusManager;
+    private StatusManager playerStatusManager;
 
     private void Start()
     {
-        statusManager = GetComponent<StatusManager>();
+        playerStatusManager = GetComponent<StatusManager>();
     }
 
     void Update()
@@ -19,7 +19,16 @@ public class PlayerAttack : AttackBase
 
     protected override void HandleAttackHit(GameObject gameObject)
     {
-        Destroy(gameObject);
-        statusManager.AddScore(10.0f);
+        base.HandleAttackHit(gameObject);
+
+        EnemyStatusManager enemyStatusManager = gameObject.GetComponent<EnemyStatusManager>();
+
+        if (enemyStatusManager != null)
+        {
+            enemyStatusManager.Hit(10);
+            playerStatusManager.AddScore(10.0f);
+        }
+
+        
     }
 }

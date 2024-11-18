@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 1229291286892794366}
   - component: {fileID: 8527274435402938109}
   - component: {fileID: 1993283380063609941}
+  - component: {fileID: 2025266947793553720}
   m_Layer: 3
   m_Name: EnemyBase
   m_TagString: Untagged
@@ -355,3 +356,17 @@ MonoBehaviour:
   attackRange: 0.75
   aggroRange: 5
   animator: {fileID: 0}
+--- !u!114 &2025266947793553720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8812859530774865447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21646ebdd5346094588c88e50eeb6741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 20
+  spriteRenderer: {fileID: 2864627477018737350}
