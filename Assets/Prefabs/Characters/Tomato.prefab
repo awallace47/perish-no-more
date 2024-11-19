@@ -223,6 +223,7 @@ MonoBehaviour:
   buttonLayer:
     serializedVersion: 2
     m_Bits: 64
+  hit1: {fileID: 0}
 --- !u!114 &3960014911512189919
 MonoBehaviour:
   m_ObjectHideFlags: 0

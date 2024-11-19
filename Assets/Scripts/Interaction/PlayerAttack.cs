@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class PlayerAttack : AttackBase
 {
-    private PlayerStatusManager playerStatusManager;
+    private StatusManager statusManager;
+    public AudioSource hit1;
+
 
     private void Start()
     {
@@ -29,6 +31,6 @@ public class PlayerAttack : AttackBase
             playerStatusManager.AddScore(10.0f);
         }
 
-        
+        hit1.Play();
     }
 }
