@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerAttack : AttackBase
 {
-    private StatusManager statusManager;
+    private PlayerStatusManager playerStatusManager;
     public AudioSource hit1;
 
 
