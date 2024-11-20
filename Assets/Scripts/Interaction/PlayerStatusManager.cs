@@ -10,9 +10,11 @@ public class PlayerStatusManager : StatusManager
 
     private PlayerAttack playerAttack;
     public int stamina = 100;
+    public float regenTime = 2.0f;
     private float score = 0f;
     public int timeInSeconds = 300;
     private bool staminaRecentlyUsed = false;
+    private bool damageRecentlyTaken = false;
     public bool godMode = false;
 
     void Start()
@@ -21,6 +23,7 @@ public class PlayerStatusManager : StatusManager
         uiManager = FindObjectsByType<UIManager>(FindObjectsSortMode.None).FirstOrDefault();
 
         StartCoroutine(UpdateStamina());
+        StartCoroutine(UpdateHealth());
         StartCoroutine(UpdateCountdownTimer());
     }
 
@@ -28,6 +31,7 @@ public class PlayerStatusManager : StatusManager
     {
         StartCoroutine(FlashRed());
         health -= amount;
+        damageRecentlyTaken = true;
         uiManager?.UpdateHealth(health);
         if (health <= 0f && !godMode)
         {
@@ -88,6 +92,25 @@ public class PlayerStatusManager : StatusManager
             {
                 staminaRecentlyUsed = false;
                 yield return new WaitForSeconds(1.0f);
+            }
+
+            yield return null;
+        }
+    }
+
+    private IEnumerator UpdateHealth()
+    {
+        while (true) 
+        {
+            if (health != 100.0f && damageRecentlyTaken)
+            {
+                AddHealth(5);
+                yield return new WaitForSeconds(2.0f);
+            }
+            else if (damageRecentlyTaken)
+            {
+                damageRecentlyTaken = false;
+                yield return new WaitForSeconds(2.0f);
             }
 
             yield return null;

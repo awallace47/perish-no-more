@@ -7874,7 +7874,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4473728958154909061, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
       propertyPath: godMode
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473728958154909061, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
+      propertyPath: stamina
+      value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 8382007651367725832, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
       propertyPath: m_Mass
