@@ -6,7 +6,7 @@ class PlayerInteraction : MonoBehaviour
     public Transform interactCenter;
     public float interactRange = 0.5f;
     public LayerMask buttonLayer;
-    public AudioSource hit1;
+    //public AudioSource hit1;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftControl))
