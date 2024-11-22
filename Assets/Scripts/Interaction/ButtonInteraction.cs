@@ -6,9 +6,10 @@ public class ButtonInteraction : MonoBehaviour
     private Animator animator;
     public GameObject gate;
     public bool isGateTrigger;
-    
+    public AudioSource deathSound;
     public void Interact()
     {
+        deathSound.Play();
         animator = GetComponent<Animator>();
 
         animator?.SetTrigger("Interact");

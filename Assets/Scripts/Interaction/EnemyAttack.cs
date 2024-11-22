@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyAttack : AttackBase
 {
-    
+    public AudioSource hit1;
+
     protected override void HandleAttackHit(GameObject gameObject)
     {
         base.HandleAttackHit(gameObject);
@@ -14,6 +15,8 @@ public class EnemyAttack : AttackBase
         if (playerStatusManager != null)
         {
             playerStatusManager.SubtractHealth(damage);
+            hit1.Play();
+
         }
     }
 }
