@@ -9,7 +9,6 @@ public class ButtonInteraction : MonoBehaviour
     public AudioSource deathSound;
     public void Interact()
     {
-        deathSound.Play();
         animator = GetComponent<Animator>();
 
         animator?.SetTrigger("Interact");
