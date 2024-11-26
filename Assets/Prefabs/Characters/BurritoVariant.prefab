@@ -127,10 +127,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8812859530774865447, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4325182270551797876}
   m_SourcePrefab: {fileID: 100100000, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
 --- !u!95 &520316802334785532 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: -7241346219557202007, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
   m_PrefabInstance: {fileID: 2069712601683077205}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7418705848370220658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8812859530774865447, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+  m_PrefabInstance: {fileID: 2069712601683077205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4325182270551797876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7418705848370220658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b91a55a57c0564bb809bfce3b86117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 8748350549258371196, guid: 4521f4b6d9c83b944b0f744ca0dc9948, type: 3}
+  button1: {x: 0, y: 0, z: 0}
+  button2: {x: 0, y: 0, z: 0}
+  button3: {x: 0, y: 0, z: 0}

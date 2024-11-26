@@ -27,14 +27,18 @@ public class BossProjectile : MonoBehaviour
     {
         Vector3 projectilePos = currentProjectile.transform.position;
         Vector3 direction = button - projectilePos;
+        float distSqr = Vector3.SqrMagnitude(direction);
+        Vector3 directionNorm = direction.normalized;
         Rigidbody2D rb = currentProjectile.GetComponent<Rigidbody2D>();
 
-        while (projectilePos != button)
+        while (distSqr >= 0.01f)
         {
-            rb.MovePosition(direction * 0.01f);
+            rb.MovePosition(new Vector3(rb.position.x, rb.position.y, 0) + directionNorm * 0.1f );
+            projectilePos = currentProjectile.transform.position;
+            direction = button - projectilePos;
+            distSqr = Vector3.SqrMagnitude(direction);
             yield return null;
         }
-
-        Debug.Log("EXIT");
+        Destroy(currentProjectile);
     }
 }
