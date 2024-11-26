@@ -57,7 +57,12 @@ MonoBehaviour:
   - {x: 15.16, y: -4.34, z: 0}
   enemyPrefabs:
   - {fileID: 7148294939387869689, guid: 3d7f996c5fcdcdd4ba41bfd43e82e1e3, type: 3}
+  - {fileID: 2923334484422621471, guid: 50bbc2fcb9a5d5647bfdce8d01310fbc, type: 3}
   - {fileID: 7114674988798139873, guid: 4d9669bd03d8b8449b52dc432669980d, type: 3}
+  - {fileID: 4422562267520806248, guid: dc67f5b37dd61d24ba7c36fa38619e6f, type: 3}
+  - {fileID: 5535240511654944548, guid: 3d766cccddf03934abed82429598e162, type: 3}
+  - {fileID: 5510525616793260803, guid: ccea25572bc297b44a00724935ab56de, type: 3}
+  - {fileID: 2668464353588412855, guid: 5f7c8622ff67369479e7bcd1e8d0fbda, type: 3}
   buttonPrefab: {fileID: 7083739595331976555, guid: a1097a56c93c5d249ae4caf608af7148, type: 3}
   zone1ButtonPositions:
   - {x: 14.83, y: -16.87, z: 0}
