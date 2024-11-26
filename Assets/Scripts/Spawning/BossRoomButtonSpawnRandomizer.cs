@@ -30,12 +30,11 @@ public class BossRoomButtonSpawnRandomizer : MonoBehaviour
 
     private void SpawnButtons()
     {
-
+        buttonPositions = new List<Vector3>(spawnData.bossRoomButtonPositions);
+        bossProjectiles = new();
+        
         while (true)
         {
-           buttonPositions = spawnData.bossRoomButtonPositions;
-            bossProjectiles = new();
-
             int buttonIndex = Random.Range(0, buttonPositions.Count);
 
             GameObject button = Instantiate(spawnData.BossButtonPrefab);
