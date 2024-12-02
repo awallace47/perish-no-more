@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/level-complete.uss?fileID=7433441132597879392&amp;guid=cd018aaba3fbd494393fe28aa40aec97&amp;type=3#level-complete" />
+    <ui:VisualElement name="Container" class="container" style="flex-grow: 1;">
+        <ui:VisualElement name="CompleteTextContainer" class="complete-text-container" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Level Complete" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&quot;project://database/Assets/Thaleah_PixelFont/Materials/ThaleahFat_TTF.ttf?fileID=12800000&amp;guid=585188cdc4600544eb408bee749e4b3a&amp;type=3#ThaleahFat_TTF&quot;); -unity-font-definition: initial; font-size: 131px; color: rgb(255, 255, 255); -unity-text-align: upper-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ScoreContainer" class="score-container" style="flex-grow: 1; width: 1339px;">
+            <ui:VisualElement name="TimeBonusContainer" class="score-text-container">
+                <ui:Label tabindex="-1" text="Time Bonus: " parse-escape-sequences="true" display-tooltip-when-elided="true" name="TimeBonusLabel" class="score-text-label" />
+                <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TimeBonus" class="score-text-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="TotalScoreContainer" class="score-text-container" style="flex-grow: 1; min-height: 90px; margin-top: 35px;">
+                <ui:Label tabindex="-1" text="Score: " parse-escape-sequences="true" display-tooltip-when-elided="true" name="TotalScoreLabel" class="score-text-label" />
+                <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TotalScore" class="score-text-label" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
