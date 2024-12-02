@@ -312,10 +312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSceneName: 2Dv2
-  introScreen1: {fileID: 9197481963319205126, guid: 0561746bf08710c41a2530b8aee0cae5, type: 3}
-  introScreen2: {fileID: 9197481963319205126, guid: ca008b4ca1df7014e9c644be9afd0144, type: 3}
-  introScreen3: {fileID: 9197481963319205126, guid: 48e93a0d01239ed45bbca5e9c7d43575, type: 3}
-  introScreen4: {fileID: 9197481963319205126, guid: 31c620abb49b33a458b2f46197c604dd, type: 3}
   introSlides:
   - uiDocument: {fileID: 9197481963319205126, guid: 0561746bf08710c41a2530b8aee0cae5, type: 3}
     delay: 10
@@ -326,10 +322,6 @@ MonoBehaviour:
   - uiDocument: {fileID: 9197481963319205126, guid: 31c620abb49b33a458b2f46197c604dd, type: 3}
     delay: 10
   fadeSpeed: 0.5
-  slide1Speed: 30
-  slide2Speed: 30
-  slide3Speed: 30
-  slide4Speed: 30
 --- !u!1 &1968879141
 GameObject:
   m_ObjectHideFlags: 0

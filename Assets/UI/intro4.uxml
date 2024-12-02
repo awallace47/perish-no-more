@@ -1,4 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/intro.uss?fileID=7433441132597879392&amp;guid=b1ea1873a6c2e9a418c3d739d3da6000&amp;type=3#intro" />
-    <ui:VisualElement name="Container" class="main-container-4" style="flex-grow: 1;" />
+    <ui:VisualElement name="Container" class="main-container-4" style="flex-grow: 1;">
+        <ui:VisualElement name="TextContainer" class="text-container-4" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text " parse-escape-sequences="true" display-tooltip-when-elided="true" class="labels" />
+        </ui:VisualElement>
+    </ui:VisualElement>
 </ui:UXML>
