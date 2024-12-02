@@ -124,17 +124,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: BurritoVariant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2025266947793553720, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8812859530774865447, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4325182270551797876}
+    - targetCorrespondingSourceObject: {fileID: 8812859530774865447, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5448730913169927948}
   m_SourcePrefab: {fileID: 100100000, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
 --- !u!95 &520316802334785532 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: -7241346219557202007, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+  m_PrefabInstance: {fileID: 2069712601683077205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4285222489664934547 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2864627477018737350, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
   m_PrefabInstance: {fileID: 2069712601683077205}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &7418705848370220658 stripped
@@ -158,3 +167,19 @@ MonoBehaviour:
   button1: {x: 0, y: 0, z: 0}
   button2: {x: 0, y: 0, z: 0}
   button3: {x: 0, y: 0, z: 0}
+--- !u!114 &5448730913169927948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7418705848370220658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8ff24d76eaed09498da709994f9b7e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  spriteRenderer: {fileID: 4285222489664934547}
+  deathAnimScale: 0.5
+  completeScreen: {fileID: 9197481963319205126, guid: bc1a24b5aa075e34a8e94f5c3400f6e2, type: 3}

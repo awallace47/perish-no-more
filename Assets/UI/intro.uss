@@ -1,0 +1,115 @@
+:root {
+    --fade-speed: 0.5s;
+}
+
+.main-container-1 {
+    opacity: 0;
+    background-image: url("project://database/Assets/Sprites/Main_Menu/intro1.png?fileID=2800000&guid=6ae19f90998c87148a7df7b6aedc74d7&type=3#intro1");
+    flex-direction: column-reverse;
+}
+
+.main-container-2 {
+    opacity: 0;
+    background-image: url("project://database/Assets/Sprites/Main_Menu/intro2.png?fileID=2800000&guid=6e981356788fcc04b9852459f2c8e9b4&type=3#intro2");
+}
+
+.main-container-3 {
+    opacity: 0;
+    background-image: url("project://database/Assets/Sprites/Main_Menu/intro3.png?fileID=2800000&guid=81bd1f543c528144da7715a10c2375b3&type=3#intro3");
+}
+
+.main-container-4 {
+    opacity: 0;
+    background-image: url("project://database/Assets/Sprites/Main_Menu/intro4.png?fileID=2800000&guid=d0bc35eafd5dd0b48808cad8cedce39c&type=3#intro4");
+}
+
+.fade-in {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: var(--fade-speed);
+    transition-timing-function:ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: var(--fade-speed);
+    transition-timing-function:ease;
+}
+
+.text-container-1 {
+    max-height: 253px;
+    max-width: 1534px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: center;
+    width: 1534px;
+    flex-direction: row;
+    margin-bottom: 36px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: rgba(36, 33, 33, 0.92);
+}
+
+.text-container-3 {
+    max-height: 253px;
+    max-width: 1534px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: center;
+    width: 1534px;
+    flex-direction: row;
+    margin-bottom: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: rgba(36, 33, 33, 0.92);
+    margin-top: 36px;
+}
+
+.labels {
+    padding-left: 26px;
+    -unity-font: url("project://database/Assets/Thaleah_PixelFont/Materials/ThaleahFat_TTF.ttf?fileID=12800000&guid=585188cdc4600544eb408bee749e4b3a&type=3#ThaleahFat_TTF");
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    -unity-font-definition: initial;
+    flex-wrap: wrap;
+    white-space: normal;
+}
+
+.text-container-2 {
+    max-height: 253px;
+    max-width: 1534px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: center;
+    width: 1534px;
+    flex-direction: row;
+    margin-bottom: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: rgba(36, 33, 33, 0.92);
+    margin-top: 36px;
+}
+
+.text-container-4 {
+    max-height: 253px;
+    max-width: 1534px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: center;
+    width: 1534px;
+    flex-direction: row;
+    margin-bottom: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: rgba(36, 33, 33, 0.92);
+    margin-top: 36px;
+}

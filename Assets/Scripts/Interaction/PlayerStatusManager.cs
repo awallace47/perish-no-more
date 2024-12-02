@@ -11,7 +11,7 @@ public class PlayerStatusManager : StatusManager
     private PlayerAttack playerAttack;
     public int stamina = 100;
     public float regenTime = 2.0f;
-    private float score = 0f;
+    public float score = 0f;
     public int timeInSeconds = 300;
     private bool staminaRecentlyUsed = false;
     private bool damageRecentlyTaken = false;
