@@ -10,6 +10,8 @@ public class MenuButtonHandler : MonoBehaviour
     private Button startButton;
     private Button quitButton;
     public string gameSceneName = string.Empty;
+    public IntroSlideSpeed[] introSlides;
+    public float fadeSpeed = 0.5f;
 
     void Awake()
     {
@@ -34,8 +36,23 @@ public class MenuButtonHandler : MonoBehaviour
     {
         if (gameSceneName != string.Empty)
         {
-            SceneManager.LoadScene(gameSceneName);
+            StartCoroutine(PlayIntroCutscene());
         }
+    }
+
+    private IEnumerator PlayIntroCutscene()
+    {
+        foreach (IntroSlideSpeed slide in introSlides)
+        {
+            uiDocument.visualTreeAsset = slide.uiDocument;
+            VisualElement container = uiDocument.rootVisualElement.Q("Container");
+            yield return new WaitForSeconds(fadeSpeed);
+            container.FadeIn();
+            yield return new WaitForSeconds(slide.delay);
+            container.FadeOut();
+            yield return new WaitForSeconds(fadeSpeed);
+        }
+        SceneManager.LoadScene(gameSceneName);
     }
 
     private void QuitButtonEvent(ClickEvent _)
@@ -46,5 +63,12 @@ public class MenuButtonHandler : MonoBehaviour
     #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
     #endif
+    }
+
+    [System.Serializable]
+    public struct IntroSlideSpeed
+    {
+        public VisualTreeAsset uiDocument;
+        public float delay;
     }
 }

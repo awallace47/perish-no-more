@@ -1,0 +1,39 @@
+
+
+.main-container-1 {
+    opacity: 0;
+    background-image: url("project://database/Assets/Sprites/Main_Menu/intro1.png?fileID=2800000&guid=6ae19f90998c87148a7df7b6aedc74d7&type=3#intro1");
+}
+
+.main-container-2 {
+    opacity: 0;
+    background-image: url("project://database/Assets/Sprites/Main_Menu/intro2.png?fileID=2800000&guid=6e981356788fcc04b9852459f2c8e9b4&type=3#intro2");
+}
+
+.main-container-3 {
+    opacity: 0;
+    background-image: url("project://database/Assets/Sprites/Main_Menu/intro3.png?fileID=2800000&guid=81bd1f543c528144da7715a10c2375b3&type=3#intro3");
+}
+
+.main-container-4 {
+    opacity: 0;
+    background-image: url("project://database/Assets/Sprites/Main_Menu/intro4.png?fileID=2800000&guid=d0bc35eafd5dd0b48808cad8cedce39c&type=3#intro4");
+}
+
+.fade-in {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: var(--fade-speed);
+    transition-timing-function: linear;
+}
+
+.fade-out {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: var(--fade-speed);
+    transition-timing-function: linear;
+}
+
+:root{
+    --fade-speed: 0.5s;
+}
