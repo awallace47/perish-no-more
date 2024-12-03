@@ -56,8 +56,33 @@ PrefabInstance:
       propertyPath: isGateTrigger
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7632015437313726479, guid: a1097a56c93c5d249ae4caf608af7148, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7083739595331976555, guid: a1097a56c93c5d249ae4caf608af7148, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6550153624905805860}
   m_SourcePrefab: {fileID: 100100000, guid: a1097a56c93c5d249ae4caf608af7148, type: 3}
+--- !u!1 &3376701143804572309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7083739595331976555, guid: a1097a56c93c5d249ae4caf608af7148, type: 3}
+  m_PrefabInstance: {fileID: 5517486159128809470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6550153624905805860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3376701143804572309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb036fbd1eace62439efc0eb2de0997a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gate: {fileID: 0}
+  isGateTrigger: 0
+  deathSound: {fileID: 0}
+  fireballPrefab: {fileID: 4728509174420360820, guid: 818418ab6cc095b48bef3b710e24c869, type: 3}

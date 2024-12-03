@@ -7,7 +7,7 @@ public class ButtonInteraction : MonoBehaviour
     public GameObject gate;
     public bool isGateTrigger;
     public AudioSource deathSound;
-    public void Interact()
+    public virtual void Interact()
     {
         animator = GetComponent<Animator>();
 
