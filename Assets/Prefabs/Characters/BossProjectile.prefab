@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8907507795995014890}
   - component: {fileID: -7845171055680395855}
   - component: {fileID: 3549023788219810299}
+  - component: {fileID: 2519305555778548621}
   m_Layer: 0
   m_Name: BossProjectile
   m_TagString: Untagged
@@ -167,7 +168,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.041294336, y: -0.02062118}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -178,5 +179,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.55, y: 3.9}
+  m_Size: {x: 3.1370978, y: 2.6544697}
   m_EdgeRadius: 0
+--- !u!114 &2519305555778548621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748350549258371196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b9167ad68c50b498890b8b3d4f64cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 128

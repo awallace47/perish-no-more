@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -8447400371415324637}
   - component: {fileID: 195637609177326515}
   - component: {fileID: 1575042233357323278}
+  - component: {fileID: 7974195840146856601}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -145,7 +146,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0142757, y: -0.0751034}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -156,5 +157,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.95, y: 2.84}
+  m_Size: {x: 1.5483909, y: 1.4612205}
   m_EdgeRadius: 0
+--- !u!114 &7974195840146856601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728509174420360820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e03e07cc04c280439999e0583311750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  damage: 20

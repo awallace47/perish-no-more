@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ecafa728af991b44a9f029defabc151, type: 3}
   m_Name: BossRoomSpawnData
   m_EditorClassIdentifier: 
-  bossPosition: {x: 9.29, y: -4.27, z: 0}
+  bossPosition: {x: 9.29, y: -10, z: 0}
   bossPrefab: {fileID: 7418705848370220658, guid: 294eceb942022ee4598902b3cd87a838, type: 3}
   BossButtonPrefab: {fileID: 3376701143804572309, guid: 94b2c09a5b7af5d44adc5bf61ad44021, type: 3}
   bossRoomButtonPositions:

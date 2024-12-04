@@ -5,40 +5,46 @@ using UnityEngine;
 public class BossProjectile : MonoBehaviour
 {
     public GameObject projectilePrefab;
-    public Vector3 button1;
-    public Vector3 button2;
-    public Vector3 button3;
+    public float attackSpawnTime;
+    private GameObject player;
 
-    private void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.LeftAlt)) {
-            LaunchProjectile(button1);
+        player = GameObject.Find("Player");
+        StartCoroutine(LaunchProjectile());
+    }
+
+    public IEnumerator LaunchProjectile()
+    {
+        while (true)
+        {
+            GameObject newProjectile = Instantiate(projectilePrefab);
+            newProjectile.transform.position = transform.position;
+            StartCoroutine(MoveProjectile(player.transform.position, newProjectile));
+            yield return new WaitForSeconds(attackSpawnTime);
         }
     }
 
-    public void LaunchProjectile(Vector3 button)
-    {
-        GameObject newProjectile = Instantiate(projectilePrefab);
-        newProjectile.transform.position = transform.position;
-        StartCoroutine(MoveProjectile(button, newProjectile));
-    }
-
-    private IEnumerator MoveProjectile(Vector3 button, GameObject currentProjectile)
+    private IEnumerator MoveProjectile(Vector3 playerPos, GameObject currentProjectile)
     {
         Vector3 projectilePos = currentProjectile.transform.position;
-        Vector3 direction = button - projectilePos;
-        float distSqr = Vector3.SqrMagnitude(direction);
-        Vector3 directionNorm = direction.normalized;
+        Vector3 direction = playerPos - projectilePos;
+        Vector3 endDir = direction * 2.0f;
+
+        float distSqr = Vector3.SqrMagnitude(endDir);
+        Vector3 directionNorm = endDir.normalized;
         Rigidbody2D rb = currentProjectile.GetComponent<Rigidbody2D>();
 
-        while (distSqr >= 0.01f)
+        Destroy(currentProjectile, 3);
+        while (distSqr >= 0.1f)
         {
+            if (rb == null) {break;};
             rb.MovePosition(new Vector3(rb.position.x, rb.position.y, 0) + directionNorm * 0.1f );
             projectilePos = currentProjectile.transform.position;
-            direction = button - projectilePos;
-            distSqr = Vector3.SqrMagnitude(direction);
+            distSqr = Vector3.SqrMagnitude(endDir - projectilePos);
             yield return null;
         }
-        Destroy(currentProjectile);
+
+
     }
 }

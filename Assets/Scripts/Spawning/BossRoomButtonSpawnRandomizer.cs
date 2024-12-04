@@ -23,10 +23,6 @@ public class BossRoomButtonSpawnRandomizer : MonoBehaviour
         boss.transform.position = spawnData.bossPosition;
         boss.name = "Boss";
         BossProjectile bossProjectile = boss.GetComponent<BossProjectile>();
-        bossProjectile.button1 = bossProjectiles[0];
-        bossProjectile.button2 = bossProjectiles[1];
-        bossProjectile.button3 = bossProjectiles[2];
-        
     }
 
     private void SpawnButtons()
