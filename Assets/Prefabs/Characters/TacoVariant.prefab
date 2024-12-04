@@ -65,16 +65,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1229291286892794366, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229291286892794366, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 4955167709638864953}
     - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+      propertyPath: speed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 4955167709638864953}
+    - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+      propertyPath: aggroRange
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: attackRange
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2025266947793553720, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: health
@@ -180,15 +192,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2352023017112706623, guid: 44dda5c39fe26ec48b34396812ede6c1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.7467455
+      value: 2.166663
       objectReference: {fileID: 0}
     - target: {fileID: 2352023017112706623, guid: 44dda5c39fe26ec48b34396812ede6c1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.7467455
+      value: 2.166663
       objectReference: {fileID: 0}
     - target: {fileID: 2352023017112706623, guid: 44dda5c39fe26ec48b34396812ede6c1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.7467455
+      value: 2.166663
       objectReference: {fileID: 0}
     - target: {fileID: 2352023017112706623, guid: 44dda5c39fe26ec48b34396812ede6c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -229,6 +241,14 @@ PrefabInstance:
     - target: {fileID: 2352023017112706623, guid: 44dda5c39fe26ec48b34396812ede6c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 121.606
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648748977405728846, guid: 44dda5c39fe26ec48b34396812ede6c1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3648748977405728846, guid: 44dda5c39fe26ec48b34396812ede6c1, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 4354412470450244271, guid: 44dda5c39fe26ec48b34396812ede6c1, type: 3}
       propertyPath: m_Name

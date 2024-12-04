@@ -65,6 +65,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1229291286892794366, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229291286892794366, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 5286599033190893713}
@@ -85,12 +89,16 @@ PrefabInstance:
       value: -0.03371054
       objectReference: {fileID: 0}
     - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+      propertyPath: speed
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 5286599033190893713}
     - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: attackRange
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2025266947793553720, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: health
@@ -198,13 +206,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: bayonet
       objectReference: {fileID: 0}
+    - target: {fileID: 6525502346862565014, guid: 02abdc19f195ac84391d9dd3b8d5e667, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525502346862565014, guid: 02abdc19f195ac84391d9dd3b8d5e667, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 7523722494601242779, guid: 02abdc19f195ac84391d9dd3b8d5e667, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7807045
       objectReference: {fileID: 0}
     - target: {fileID: 7523722494601242779, guid: 02abdc19f195ac84391d9dd3b8d5e667, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.7807045
+      value: 2.3414483
       objectReference: {fileID: 0}
     - target: {fileID: 7523722494601242779, guid: 02abdc19f195ac84391d9dd3b8d5e667, type: 3}
       propertyPath: m_LocalScale.z

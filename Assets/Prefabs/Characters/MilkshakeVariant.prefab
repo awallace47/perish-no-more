@@ -65,24 +65,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1229291286892794366, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229291286892794366, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 3293627952017416845}
     - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: speed
-      value: 500
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 3293627952017416845}
     - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
+      propertyPath: aggroRange
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993283380063609941, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: attackRange
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2025266947793553720, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: health
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2864627477018737350, guid: c80ff65de7228824d99cb6e17f750ff4, type: 3}
       propertyPath: m_FlipX
@@ -241,6 +249,14 @@ PrefabInstance:
     - target: {fileID: 4803471684496019850, guid: ee122a3338a420f4daa3f1822d298a9d, type: 3}
       propertyPath: m_Name
       value: dagger4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089493119700165107, guid: ee122a3338a420f4daa3f1822d298a9d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089493119700165107, guid: ee122a3338a420f4daa3f1822d298a9d, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 512
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

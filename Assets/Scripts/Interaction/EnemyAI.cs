@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.Find("Player").transform;
         enemyAttack = GetComponent<EnemyAttack>();
-        InvokeRepeating("UpdatePath", 0f, 0.1f);
+        InvokeRepeating("UpdatePath", 0f, 0.05f);
         
     }
 
@@ -83,11 +83,11 @@ public class EnemyAI : MonoBehaviour
             currentWaypoint++;
         }
 
-        if (rb.velocity.x >= 0.01f)
+        if (rb.velocity.x >= 0.05f)
         {
             transform.eulerAngles = Vector3.zero;
         }
-        else if (rb.velocity.x <= -0.01f) 
+        else if (rb.velocity.x <= -0.05f) 
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }

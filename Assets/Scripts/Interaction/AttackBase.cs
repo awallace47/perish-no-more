@@ -7,7 +7,7 @@ public class AttackBase : MonoBehaviour
     public LayerMask enemyLayers;
     public Animator animator;
     protected List<GameObject> currentHitObjs = new();
-    public bool IsAttacking { get; private set; }
+    public bool IsAttacking { get; protected set; }
     protected bool isHitting = false;
 
     private void Start()

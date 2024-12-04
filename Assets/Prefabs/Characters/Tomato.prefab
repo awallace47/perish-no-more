@@ -194,7 +194,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.04400307, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -205,7 +205,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.81, y: 2.44}
+  m_Size: {x: 2.4260316, y: 2.44}
   m_EdgeRadius: 0
 --- !u!114 &7792178180931162814
 MonoBehaviour:
@@ -224,7 +224,6 @@ MonoBehaviour:
   buttonLayer:
     serializedVersion: 2
     m_Bits: 64
-  hit1: {fileID: 4942091576169935805}
 --- !u!114 &3960014911512189919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,6 +274,7 @@ MonoBehaviour:
     m_Bits: 8
   stamina: 100
   regenTime: 2
+  score: 0
   timeInSeconds: 300
   godMode: 1
 --- !u!82 &4942091576169935805
@@ -446,15 +446,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1876800685452102888, guid: 020cf799182c54243ad79c06c1e1fdb0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.075923
+      value: 1.7422005
       objectReference: {fileID: 0}
     - target: {fileID: 1876800685452102888, guid: 020cf799182c54243ad79c06c1e1fdb0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.075923
+      value: 1.7422005
       objectReference: {fileID: 0}
     - target: {fileID: 1876800685452102888, guid: 020cf799182c54243ad79c06c1e1fdb0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.075923
+      value: 1.7422005
       objectReference: {fileID: 0}
     - target: {fileID: 1876800685452102888, guid: 020cf799182c54243ad79c06c1e1fdb0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -502,7 +502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1996699844699532761, guid: 020cf799182c54243ad79c06c1e1fdb0, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1261387282451589892, guid: 020cf799182c54243ad79c06c1e1fdb0, type: 3}

@@ -2,7 +2,7 @@
     <Style src="project://database/Assets/UI/intro.uss?fileID=7433441132597879392&amp;guid=b1ea1873a6c2e9a418c3d739d3da6000&amp;type=3#intro" />
     <ui:VisualElement name="Container" class="main-container-3" style="flex-grow: 1;">
         <ui:VisualElement name="TextContainer" class="text-container-3" style="flex-grow: 1;">
-            <ui:Label tabindex="-1" text="Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text " parse-escape-sequences="true" display-tooltip-when-elided="true" class="labels" />
+            <ui:Label tabindex="-1" text="C-Cold... so cold... W-where am I now? This doesn’t feel right...&#10;Oh no... is that—? No! They didn’t... they wouldn’t!&#10;This isn’t just a fridge... it’s a tomb for my kind! I’ve got to get out of here before I become... human food!" parse-escape-sequences="true" display-tooltip-when-elided="true" class="labels" style="font-size: 44px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

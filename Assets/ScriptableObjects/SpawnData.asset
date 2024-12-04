@@ -53,7 +53,6 @@ MonoBehaviour:
   - {x: 2.21, y: -9.17, z: 0}
   - {x: 17.11, y: -9.83, z: 0}
   - {x: 6.51, y: -14.52, z: 0}
-  - {x: 6.51, y: -14.52, z: 0}
   - {x: 15.16, y: -4.34, z: 0}
   enemyPrefabs:
   - {fileID: 7148294939387869689, guid: 3d7f996c5fcdcdd4ba41bfd43e82e1e3, type: 3}

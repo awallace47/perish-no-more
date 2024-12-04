@@ -1,8 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/intro.uss?fileID=7433441132597879392&amp;guid=b1ea1873a6c2e9a418c3d739d3da6000&amp;type=3#intro" />
     <ui:VisualElement name="Container" class="main-container-4" style="flex-grow: 1;">
-        <ui:VisualElement name="TextContainer" class="text-container-4" style="flex-grow: 1;">
-            <ui:Label tabindex="-1" text="Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text " parse-escape-sequences="true" display-tooltip-when-elided="true" class="labels" />
+        <ui:VisualElement name="TextContainer" class="text-container-4" style="flex-grow: 1; max-height: 391px; max-width: 1666px; width: 1651px;">
+            <ui:Label tabindex="-1" text="Tomato: Excuse me, sir! Are you alright?&#10;&#10;Old potato: Aaaachoo! No... no, I’m not alright. My brother... they took him. The humans dragged him away. They’ll cook him soon.&#10;&#10;Tomato:  I’m so sorry to hear that. We can’t let that happen! I’ll help you save him!&#10;&#10;Old Potato: You don’t understand, young one. It’s too dangerous. The humans—once they take one of us, they don’t stop. And worse... They have their minions. Foods that were once like us, now twisted and cooked. They serve the humans without question, guarding the kitchen and hunting anyone who dares to resist. Through there lies the kitchen. Once you leave this fridge, there’s no turning back. Find my brother, if you can. Save him... and may you both return safely" parse-escape-sequences="true" display-tooltip-when-elided="true" class="labels" style="font-size: 30px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
