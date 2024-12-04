@@ -7878,7 +7878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4473728958154909061, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
       propertyPath: stamina
-      value: 100000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7409345247298655879, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
       propertyPath: m_IsTrigger
@@ -7898,11 +7898,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8699901630925232846, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.08
+      value: 3.79
       objectReference: {fileID: 0}
     - target: {fileID: 8699901630925232846, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.22
+      value: -6.85
       objectReference: {fileID: 0}
     - target: {fileID: 8699901630925232846, guid: 3bba6293f45a3294b9e28e6510ff54c4, type: 3}
       propertyPath: m_LocalPosition.z
